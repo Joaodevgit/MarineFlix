@@ -1,0 +1,149 @@
+{
+  "categorias": [
+    {
+      "titulo": "Músicas Acústicas",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Músicas acústicas que valem a pena ouvir!"
+      },
+      "videos": [
+        {
+        "titulo": "Portugal Campeão Europeu 2016 #RecordarÉViver",
+          "url": "https://www.youtube.com/watch?v=RbScJsD_kG8"
+        },
+        {
+          "titulo": "Blinding Lights - The Weeknd (Boyce Avenue acoustic cover)",
+          "url": "https://www.youtube.com/watch?v=dmDbS5LyiZ0&list=PLtd--8s9Fp4VOoP5tZjuwXWOjWuJrGIb0&index=10"
+        },
+        {
+          "titulo": "Circles - Post Malone (Boyce Avenue acoustic cover)",
+          "url": "https://www.youtube.com/watch?v=pdtK5Jv0Kv0&list=PLtd--8s9Fp4VOoP5tZjuwXWOjWuJrGIb0&index=11"
+        },
+        {
+          "titulo": "Wonderwall - Oasis (Boyce Avenue acoustic cover)",
+          "url": "https://www.youtube.com/watch?v=ZcCugbHr17E&list=PLtd--8s9Fp4VOoP5tZjuwXWOjWuJrGIb0&index=9"
+        },
+        {
+          "titulo": "Kings Of Leon - Use Somebody (Boyce Avenue feat. Hannah Trigwell acoustic cover) ",
+          "url": "https://www.youtube.com/watch?v=HNrgK8h2xBc&list=PLtd--8s9Fp4XJwoFuGfhlFesV5oVmKL-5&index=28"
+        },
+        {
+          "titulo": "Coming Home - P Diddy (Boyce Avenue feat. DeStorm piano cover)",
+          "url": "https://www.youtube.com/watch?v=heF9OSHZ4tY&list=PLtd--8s9Fp4XJwoFuGfhlFesV5oVmKL-5&index=36"
+        }     
+      ]
+    },
+    {
+      "titulo": "Valorant",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Guias acerca do jogo Valorant"
+      },
+      "videos": [
+        {
+          "titulo": "The ULTIMATE ECONOMY GUIDE for Valorant - Tips & Tricks Explained",
+          "url": "https://www.youtube.com/watch?v=5skvzBtN7O4"
+        },
+        {
+          "titulo": "Get MORE KILLS and STOP DYING! - Valorant PEEKING Guide",
+          "url": "https://www.youtube.com/watch?v=1NE09BF8pGs"
+        },
+        {
+          "titulo": "Valorant AIM GUIDE - Pro and Beginner Aim Settings Tips and Tricks",
+          "url": "https://www.youtube.com/watch?v=g_vRQ0KJ5bs"
+        },
+        {
+          "titulo": "How to CONTROL your RECOIL and SPRAY PATTERNS like a PRO!",
+          "url": "https://www.youtube.com/watch?v=ed2AUZADhks"
+        }, 
+        {
+          "titulo": "PRO PISTOL ROUND GUIDE for ALL AGENTS - ft. Hiko, Brax, Mixwell, Aceu, and MORE!",
+          "url": "https://www.youtube.com/watch?v=9G0p7AdhvW4"
+        },
+        {
+          "titulo": "Valorant ROLE GUIDE: Entry Fragger, Lurker, and MORE EXPLAINED!",
+          "url": "https://www.youtube.com/watch?v=xgXPb1bybaY"
+        }
+      ]
+    },
+    {
+      "titulo": "Hacks",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Curiosidades sobre temas relacionados com hacking entre outras"
+      },
+      "videos": [
+        {
+          "titulo": "Por que tem TANTOS cheaters nos jogos? Entenda como os Anti-Cheats funcionam",
+          "url": "https://www.youtube.com/watch?v=LXI856j_aO4"
+        },
+        {
+          "titulo": "COMO SER UM HACKER: Dicas pra quem quer começar na área da segurança da informação",
+          "url": "https://www.youtube.com/watch?v=ff0llG4atYs"
+        },
+        {
+          "titulo": "Como CHEATS e HACKS de jogos são criados? - Trainers",
+          "url": "https://www.youtube.com/watch?v=0w6Pb2p-r5o"
+        },
+        {
+          "titulo": "Como canais de Youtube estão sendo HACKEADOS? - Ft. Teafe",
+          "url": "https://www.youtube.com/watch?v=x3XNiboiCFM&t=5s"
+        }
+      ]
+    },
+    {
+      "titulo": "Memes",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Vídeos relacionados com memes"
+      },
+      "videos": [
+        {
+          "titulo": "Ai pai para! [VÍDEO COMPLETO]",
+          "url": "https://www.youtube.com/watch?v=aChIOAQ8C0g"
+        },
+        {
+          "titulo": "Não dói, juro pela minha morte..",
+          "url": "https://www.youtube.com/watch?v=hWw10ppvpIo"
+        },
+        {
+          "titulo": "Na mecânica e também ando no roubo kkk",
+          "url": "https://www.youtube.com/watch?v=xqgfvAgsXlc"
+        },
+        {
+          "titulo": "Ganza na Areia - Senhor Luís",
+          "url": "https://www.youtube.com/watch?v=OoV5PzOWxws"
+        }
+      ]
+    },
+    {
+      "titulo": "HooligansGame",
+      "cor": "red",
+      "link_extra": {
+        "text": "Um pouco sobre o jogo de HooligansGame"
+      },
+      "videos": [
+        {
+          "titulo": "[Hooligans Game] HooligansPortugal(HGP) (21) 10 x 0 (16) (NWO)(NewWorldOrder) Ally League",
+          "url": "https://www.youtube.com/watch?v=PcrGTKASaNA"
+        },
+        {
+          "titulo": "[Hooligans Game] BUPETEBAPETE(RAxCB) (20) 0 x 4 (22) (HGP)(HooligansPortugal) Ally League",
+          "url": "https://www.youtube.com/watch?v=ReMd2yyIexk"
+        },
+        {
+          "titulo": "[Hooligans Game] Portugal (59) 24 x 0 (50) Croatia Country League",
+          "url": "https://www.youtube.com/watch?v=tSo_BQj5CEM"
+        },
+        {
+          "titulo": "[Hooligans Game] JuveLeo76(JL76) (18) 0x8 (14) (1904)Cosme Damião",
+          "url": "https://www.youtube.com/watch?v=F2TLB5wf0cw"
+        },
+        {
+          "titulo": "[Hooligans Game] Benfica 20 - 0 Sporting (Club League)",
+          "url": "https://www.youtube.com/watch?v=-AGQxIIfNI8"
+        }
+      ]
+    }
+  ]
+}
