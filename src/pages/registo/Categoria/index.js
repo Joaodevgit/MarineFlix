@@ -30,8 +30,10 @@ function AddCategory() {
   }
 
   useEffect(() => {
-    const urlLocalHost = 'http://localhost:8080/categorias';
-    fetch(urlLocalHost)
+    const URLLOCALHOST = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://marineflix.herokuapp.com/categorias';
+    fetch(URLLOCALHOST)
       .then(async (serverResponse) => {
         const response = await serverResponse.json();
         setCategories([

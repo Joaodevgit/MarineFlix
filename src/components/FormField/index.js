@@ -105,7 +105,7 @@ FormField.defaultProps = {
 
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
-  type: PropTypes.number,
+  type: PropTypes.string,
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
