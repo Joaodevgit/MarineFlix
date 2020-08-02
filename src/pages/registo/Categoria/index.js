@@ -1,107 +1,132 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
-import {Link} from 'react-router-dom';
 import FormField from '../../../components/FormField';
-
+import Button from '../../../components/Button';
 
 function AddCategory() {
-    const initialValues = {
-        nome:'',
-        descricao:'',
-        cor:'',
-    }
+  const initialValues = {
+    nome: '',
+    descricao: '',
+    cor: '',
+  };
 
-    const [categories, setCategories] = useState([]);
-    const [values, setValues] = useState(initialValues);
-    
-    function setValue(key,value){
-        //key: nome, descrição, cor,...
-        setValues({
-            ...values,
-            [key]: value, // nome: 'value'
-        })
-    }
+  const [categories, setCategories] = useState([]);
+  const [values, setValues] = useState(initialValues);
 
-    function handlerChange(eventInfo) {
-        setValue(
-            eventInfo.target.getAttribute('name'),
-            eventInfo.target.value
-        );
-    }
+  function setValue(key, value) {
+    // key: nome, descrição, cor,...
+    setValues({
+      ...values,
+      [key]: value, // nome: 'value'
+    });
+  }
 
-    return ( 
-        <PageDefault >
-        <h1> Adição de Categoria {values.nome} </h1>
+  function handlerChange(eventInfo) {
+    setValue(
+      eventInfo.target.getAttribute('name'),
+      eventInfo.target.value,
+    );
+  }
 
-        <form onSubmit={function handleSubmit(eventInfo){
-            eventInfo.preventDefault();
-            console.log('Foi feita uma submissão');
-            setCategories([
-                ...categories, 
-                values
-            ]);
-            
-            setValues(initialValues);
-        }}>
+  useEffect(() => {
+    const urlLocalHost = 'http://localhost:8080/categorias';
+    fetch(urlLocalHost)
+      .then(async (serverResponse) => {
+        const response = await serverResponse.json();
+        setCategories([
+          ...response,
+        ]);
+      });
+
+    //    setTimeout(() => {
+    //      setCategories([
+    //        ...categories,
+    //        {
+    //          id: 1,
+    //         nome: 'Músicas Acústicas',
+    //          descricao: 'Músicas acústicas que valem a pena ouvir!',
+    //          cor: '#cbd1f',
+    //        },
+    //        {
+    //          id: 2,
+    //          nome: 'Valorant',
+    //          descricao: 'Guias acerca do jogo Valorant',
+    //          cor: '#cbd1f',
+    //        },
+    //      ]);
+    //    }, 3 * 1000);
+  }, []);
+
+  return (
+    <PageDefault>
+      <h1>
+        {' '}
+        Adição de Categoria
+        {values.nome}
+      </h1>
+
+      <form onSubmit={function handleSubmit(eventInfo) {
+        eventInfo.preventDefault();
+        console.log('Foi feita uma submissão');
+        setCategories([
+          ...categories,
+          values,
+        ]);
+
+        setValues(initialValues);
+      }}
+      >
 
         <FormField
-            label ="Nome da Categoria: "
-            type="text"
-            name = "nome"
-            value = {values.nome}
-            onChange = {handlerChange}
+          label="Nome da Categoria: "
+          name="nome"
+          value={values.nome}
+          onChange={handlerChange}
         />
 
-        {/* VER COMO FAZER O TEXTAREA*/}
         <FormField
-            label ="Descrição da Categoria: "
-            type="???"
-            name = "descricao"
-            value = {values.descricao}  
-            onChange = {handlerChange}
+          label="Descrição da Categoria: "
+          type="textarea"
+          name="descricao"
+          value={values.descricao}
+          onChange={handlerChange}
         />
 
-        {/*
-        <div>
-            <label>
-                Descrição da Categoria:
-                <textarea type = "text"
-                          value = {values.descricao}
-                          name= "descricao"
-                          onChange = {handlerChange}
-                /> 
-            </label>
-        </div>
-        */}
         <FormField
-            label ="Cor: "
-            type="color"
-            name = "cor"
-            value = {values.cor}
-            onChange = {handlerChange}
-        /> 
-            
-        <button>
-            Adicionar
-        </button>
-        </form>
+          label="Cor: "
+          type="color"
+          name="cor"
+          value={values.cor}
+          onChange={handlerChange}
+        />
 
+        <Button>
+          Adicionar
+        </Button>
+      </form>
 
-        <ul>
-            {categories.map((category, index) => {
-                return (
-                    <li key = {`${category} ${index}`}> {/*usado para garantir que a key em li é único*/}
-                        {category.nome}
-                    </li>
-                )
-            })}
-        </ul>
+      {categories.length === 0 && (
+      <div>
+        {/* A carregar... */}
+        Loading...
+      </div>
+      )}
 
-        <Link to = "/" >
-        Regressar à homepage 
-        </Link> 
-        </PageDefault>
-    )
+      <ul>
+        {categories.map((category) => (
+          <li key={`${category.nome}`}>
+            {/* usado para garantir que a key em li é único */}
+            {category.nome}
+          </li>
+        ))}
+      </ul>
+
+      <Link to="/">
+        Regressar à homepage
+      </Link>
+    </PageDefault>
+  );
 }
 
 export default AddCategory;

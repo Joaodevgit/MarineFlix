@@ -1,0 +1,16 @@
+{
+    "categorias":[
+        {
+            "id":1,
+            "nome":"Músicas Acústicas",
+            "descricao":"Músicas acústicas que valem a pena ouvir!",
+            "cor":"#cbd1f"
+        },
+        {
+            "id":2,
+            "nome":"Valorant",
+            "descricao":"Guias acerca do jogo Valorant",
+            "cor":"#cbd1f"
+        }
+    ]
+}
